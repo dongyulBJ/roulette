@@ -18,13 +18,6 @@ h1 {
     margin: 20px 0;
 }
 
-#rouletteCanvas {
-    width: 90vw; /* 원하는 표시 크기로 조정 */
-    height: 90vw;
-    margin: 10px auto;
-    border: none;
-}
-
 .spinButton {
     padding: 10% 20%;
     margin: 0 10px;
