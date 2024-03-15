@@ -1,0 +1,32 @@
+* {
+    font-family: 'Gamja Flower', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: white;
+}
+
+h1 {
+    font-size: 10vw;
+}
+
+#itemsInput {
+    width: 80%;
+    height: 100px;
+    margin: 20px 0;
+}
+
+#rouletteCanvas {
+    width: 90vw; /* 원하는 표시 크기로 조정 */
+    height: 90vw;
+    margin: 10px auto;
+    border: none;
+}
+
+.spinButton {
+    padding: 10% 20%;
+    margin: 0 10px;
+    border: 10px black;
+}
