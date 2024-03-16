@@ -1,5 +1,3 @@
-let items = ['밴드공연', '퍼스널컬러', '탄생컬러', '세미나 이용권', '카페 이용권', '향수제작 원데이 클래스']; // 룰렛 항목 생성
-
 const canvas = document.getElementById('rouletteCanvas');//canvas 변수를 만드는 부분, id가 rouletteCanvas인 캔버스(html파일 안에 있음)에 canvas 변수를 사용해 접근할 수 있음
 
 const ctx = canvas.getContext('2d');//ctx 변수를 만드는 부분, 위에서 만든 canvas 변수와 연계함, ctx 변수를 사용하여 캔버스에 그래픽 작업을 수행할 수 있음
@@ -12,8 +10,8 @@ const centerY = canvas.height / 2;
 let currentRotation = 0;
 
 let dpi = window.devicePixelRatio;
-canvas.style.width = "90vw";//룰렛판 넓이 조절
-canvas.style.height = "90vw";//룰렛판 높이 조절
+canvas.style.width = "150vw";//룰렛판 넓이 조절
+canvas.style.height = "150vw";//룰렛판 높이 조절
 
 // 룰렛을 그리는 함수
 function drawRoulette() {
