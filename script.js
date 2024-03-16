@@ -10,8 +10,6 @@ const centerY = canvas.height / 2;
 let currentRotation = 0;
 
 let dpi = window.devicePixelRatio;
-canvas.style.width = "150vw";//룰렛판 넓이 조절
-canvas.style.height = "150vw";//룰렛판 높이 조절
 
 // 룰렛을 그리는 함수
 function drawRoulette() {
