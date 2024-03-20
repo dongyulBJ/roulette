@@ -1,3 +1,5 @@
+let items = ['카페 이용권', '퍼스널컬러', '탄생컬러', '밴드공연', '멘토링서비스'];
+
 const canvas = document.getElementById('rouletteCanvas');//canvas 변수를 만드는 부분, id가 rouletteCanvas인 캔버스(html파일 안에 있음)에 canvas 변수를 사용해 접근할 수 있음
 
 const ctx = canvas.getContext('2d');//ctx 변수를 만드는 부분, 위에서 만든 canvas 변수와 연계함, ctx 변수를 사용하여 캔버스에 그래픽 작업을 수행할 수 있음
@@ -27,14 +29,14 @@ function drawRoulette() {
         switch (value) {//색상 선택
             case 'seomyeon':
                 ctx.fillStyle = 'green';
-              break;
+                break;
             case 'donglae':
                 ctx.fillStyle = 'cyan';
-              break;
+                break;
             default:
                 ctx.fillStyle = 'yellow';
-              break;
-          }
+                break;
+            }
         ctx.fill();//채색
         ctx.stroke();//경로를 따라 선을 그리고 선의 스타일 적용
 
