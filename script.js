@@ -2,11 +2,11 @@ const canvas = document.getElementById('rouletteCanvas');//canvas 변수를 만�
 
 const ctx = canvas.getContext('2d');//ctx 변수를 만드는 부분, 위에서 만든 canvas 변수와 연계함, ctx 변수를 사용하여 캔버스에 그래픽 작업을 수행할 수 있음
 
-size = window.innerWidth
+let size = window.innerWidth
 canvas.width = size;
 canvas.height = size;
-const centerX = canvas.width / 2;
-const centerY = canvas.height / 2;
+const centerX = canvas.width / window.centerXDenominator;
+const centerY = canvas.height / window.centerYDenominator;
 let currentRotation = 0;
 
 let dpi = window.devicePixelRatio;
@@ -32,7 +32,7 @@ function drawRoulette() {
                 ctx.fillStyle = 'cyan';
               break;
             default:
-                ctx.fillStyle = 'yellow';
+                ctx.fillStyle = 'skyblue';
               break;
           }
         ctx.fill();//채색
